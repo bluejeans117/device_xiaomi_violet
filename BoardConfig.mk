@@ -154,8 +154,6 @@ TARGET_USES_MKE2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
-TARGET_HAS_NO_POWER_STATS := true
-TARGET_HAS_NO_WLAN_STATS := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # QCOM
