@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.pixelexperience.thermalcontroller"
+    package="com.bootleggers.thermalcontroller"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -25,7 +25,7 @@
         android:targetSdkVersion="24"/>
 
     <permission
-        android:name="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS"
+        android:name="com.bootleggers.thermalcontroller.MANAGE_SETTINGS"
         android:protectionLevel="signature|privileged" />
 
     <application
@@ -33,9 +33,9 @@
         android:persistent="true">
         <provider
             android:name=".PreferencesProvider"
-            android:authorities="org.pixelexperience.thermalcontroller"
+            android:authorities="com.bootleggers.thermalcontroller"
             android:exported="true"
-            android:readPermission="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS" />
+            android:readPermission="com.bootleggers.thermalcontroller.MANAGE_SETTINGS" />
 
         <receiver android:name=".Receiver">
             <intent-filter>
