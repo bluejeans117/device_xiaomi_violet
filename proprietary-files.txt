@@ -787,6 +787,8 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|8f25b37df26cab5c11b3b32faaee39
 # Perf - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
 bin/perfservice|f1456abf782c2d96c142e989a78a8353e66447eb
 etc/init/perfservice.rc|81b7d732069783873184c4f51710236ee6139e49
+-framework/QPerformance.jar|8cab9e3700ffc52519ec59cb18c28d75140a8978
+-framework/UxPerformance.jar|4cd4f8be2d2fc808b1e306afa37d13aa2a580bf5
 lib/libqti-at.so|c11836f1dcc4efdc924a77384aafff9403f4c2b5
 lib/libqti-perfd-client_system.so|f47cb2b122ad7b2e2f41903b3e53d43bfdff0915
 lib/libqti-util_system.so|a308dfbd4f1349ac426bc13c3a7d29cb3cb87129
