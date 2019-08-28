@@ -665,27 +665,6 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib/hw/vulkan.sm6150.so
 vendor/lib64/hw/vulkan.sm6150.so
 
-# IO prefetcher - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
-lib/libqti-iopd-client_system.so|6c9c57846161f0e314dc14dbc9dc5c35f66b5cb8
-lib/vendor.qti.hardware.iop@1.0.so|c2be37e10d6517ad0a5165d32fcf5c50b4c19def
-lib/vendor.qti.hardware.iop@2.0.so|2b90c049f83e63eaf016b18fa10769cd622e1049
-lib64/libqti-iopd-client_system.so|8fa0b32af5e51a84375004d472c6683cbe5a7a42
-lib64/vendor.qti.hardware.iop@1.0.so|1d7d1133efe7da7ac9cf40bddba2fe14d7c3d8b9
-lib64/vendor.qti.hardware.iop@2.0.so|b674e973221d8652ff7a5f33a04fcb728d94f056
-lib64/vendor.qti.hardware.perf@1.0.so|eb80353e7d5bcf3b30b23d4bc89bd0ebcf773306
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|9071dd92fae6b84a4673a408349a718edb7df853
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|b0059496c5fbb05afa6a746527685da01847433f
-vendor/lib/libqti-iopd-client.so|11ebdd9a146bf4cc0aba1f734ce74f63e42617ce
-vendor/lib/libqti-iopd.so|0d1d0fc6acc6708c1555e0d81d5253c7d462b3a0
-vendor/lib/vendor.qti.hardware.iop@1.0.so|d6a0df41b2353b8eef496df31c8d7ad64d020a06
-vendor/lib/vendor.qti.hardware.iop@2.0.so|8e2bb954eee38af56b122bb5aeaaabd10d125bb6
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|eb3820e3e180090a8d835c9f6ac1eb2222a0721c
-vendor/lib64/libqti-iopd-client.so|4832100346c4ba20af1cb1ff28e204b42947045f
-vendor/lib64/libqti-iopd.so|84861e8b392fc2108e4143f2212f46676919d005
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|0c9c3f77119bb38155d26710a505a6e8b330c502
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|80fcdf0fda39edb388e3101f05884d8ab7f2740e
-
 # IPA
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
@@ -787,21 +766,8 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|bcd74afe1002827f017eda1ed3c541
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|8f25b37df26cab5c11b3b32faaee3903628aed88
 
 # Perf - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
-bin/perfservice|f1456abf782c2d96c142e989a78a8353e66447eb
-etc/init/perfservice.rc|81b7d732069783873184c4f51710236ee6139e49
--framework/QPerformance.jar|8cab9e3700ffc52519ec59cb18c28d75140a8978
--framework/UxPerformance.jar|4cd4f8be2d2fc808b1e306afa37d13aa2a580bf5
-lib/libqti-at.so|c11836f1dcc4efdc924a77384aafff9403f4c2b5
-lib/libqti-perfd-client_system.so|f47cb2b122ad7b2e2f41903b3e53d43bfdff0915
-lib/libqti-util_system.so|a308dfbd4f1349ac426bc13c3a7d29cb3cb87129
-lib/libqti_performance.so|4b25b1ae5b49d450d49b0eb20af35c90fe8980dc
-lib/vendor.qti.hardware.perf@1.0.so|9c693e42f5bd64235ce19cf59f0ad920dcadcc17
-lib64/libqti-at.so|bfb8bf2d689ade350b9a22a8264cd83e5d7c91ec
-lib64/libqti-perfd-client_system.so|e3d575b52fc056053a3b89d39c5caba61a90ca71
-lib64/libqti-util_system.so|14f7bca28255a35c3c7bdfbbb9b9b037921fe56a
-lib64/libqti_performance.so|5933b3d0f4d2190d8a831877ab535ab7cd7ca80d
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|ae806f654364c4d14f598d47448a72c7660e2e11
 vendor/bin/msm_irqbalance|0b9421b30566d7c42efd696443bd000975fed7d6
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|ae806f654364c4d14f598d47448a72c7660e2e11
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
 vendor/etc/perf/commonresourceconfigs.xml|7bf6b442875ec6244db05ffcc2ebb85a1c370863
 vendor/etc/perf/perfboostsconfig.xml|65946aefb3cf87cf0aef26617e89bcabf71fcaba
@@ -809,12 +775,6 @@ vendor/etc/perf/targetconfig.xml|53d6e2936c1cdc67edf86a2ccf04084adbff4a68
 vendor/etc/perf/targetresourceconfigs.xml|0a614d97672c516aedc253aec525468fbdb270ec
 vendor/etc/perf/thermalboost.conf|3a70ac91160e48a64578f0b7775798f19040e87d
 vendor/etc/powerhint.xml|a6a552f11d0c8cdee91c21293118ca1e0881e00c
-vendor/lib/libperfgluelayer.so|6cee0719bb4189572ce77f05c01bf871358738fd
-vendor/lib/libqti-perfd-client.so|59ed27dae8d296d55247f945f32231a38984818d
-vendor/lib/libqti-perfd.so|001472d46c13adec08aad430d7b2dc8bdf308832
-vendor/lib/libqti-util.so|6512291deb0695b9387d8d5af3ed11f6dffd8fb7
-vendor/lib/libqti-utils.so|36422251c93c232ece8c25420670cf2d4637d0c1
-vendor/lib/vendor.qti.hardware.perf@1.0.so|7ec925a952d286b983d4c34a2335365b26f88cea
 vendor/lib64/liblearningmodule.so|3d92dcc8e4ba7fe0227e47a236eacda62babce9c
 vendor/lib64/libmeters.so|742ad0162bfa789a107473789106fd14d2bf41ca
 vendor/lib64/libperfgluelayer.so|eb137856d7180bac0bb33c463ac1851fa3904f39
