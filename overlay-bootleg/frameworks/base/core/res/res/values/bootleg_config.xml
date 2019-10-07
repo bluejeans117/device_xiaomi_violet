@@ -27,7 +27,4 @@
 
     <!-- Whether to allow sending active app broadcast -->
     <bool name="config_allowActivePackageBroadcast">true</bool>
-
-     <!-- Default state for LiveDisplay -->
-    <bool name="config_liveDisplayAvailable">true</bool>
 </resources>
