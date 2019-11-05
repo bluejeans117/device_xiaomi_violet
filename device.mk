@@ -136,6 +136,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleCamera
 
+#Crimson
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson$
+
+PRODUCT_PACKAGES += \
+    Crimson
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
