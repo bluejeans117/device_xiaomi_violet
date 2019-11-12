@@ -29,8 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.noisy.broadcast.delay=600 \
     vendor.audio.offload.pstimeout.secs=3 \
     vendor.audio_hal.in_period_size=144 \
+    vendor.voice.path.for.pcm.voip=true \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2
+    vendor.audio.adm.buffering.ms=12
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
