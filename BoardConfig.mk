@@ -157,6 +157,10 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_violet
+TARGET_RECOVERY_DEVICE_MODULES := libinit_violet
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
