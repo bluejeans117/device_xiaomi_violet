@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
 
 #Crimson
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson$
+    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson.xml
 
 PRODUCT_PACKAGES += \
     Crimson
