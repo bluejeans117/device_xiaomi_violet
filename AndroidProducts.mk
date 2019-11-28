@@ -6,3 +6,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bootleg_violet.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_violet-userdebug
