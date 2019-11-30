@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-bootleg
+    $(LOCAL_PATH)/overlay-evo
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -151,6 +151,14 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Crimson
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson.xml
+
+PRODUCT_PACKAGES += \
+    Crimson
+
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -175,6 +183,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
+
+# Google Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
+
+PRODUCT_PACKAGES += \
+    GoogleCamera
 
 # Media
 PRODUCT_PACKAGES += \
