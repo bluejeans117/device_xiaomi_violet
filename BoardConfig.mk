@@ -157,7 +157,7 @@ TARGET_USES_MKE2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150
+# PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"

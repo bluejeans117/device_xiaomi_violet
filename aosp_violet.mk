@@ -13,7 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common rom specific stuff.
+# Inherit some common evo specific stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
