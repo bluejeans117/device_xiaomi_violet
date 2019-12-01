@@ -425,7 +425,7 @@ PRODUCT_PACKAGES += \
 
 # Wallpapers
 PRODUCT_PACKAGES += \
-    PixelLiveWallpaper
+    WallpapersBReel2019
 
 # Wifi
 PRODUCT_PACKAGES += \
