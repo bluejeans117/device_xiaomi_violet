@@ -42,8 +42,6 @@ on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    start vendor.qseecomd
-    start keymaster-4-0
 
 on early-fs
     start vold
@@ -128,6 +126,10 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+# D2TW
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
+
 # access permissions for FPC service
    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
@@ -170,7 +172,6 @@ on property:sys.shutdown.requested=*
     stop vendor.ims_rtp_daemon
 
 on charger
-    start vendor.hvdcp_opti
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
     start vendor.power_off_alarm
@@ -189,26 +190,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
-service adsprpcd_root /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
-
-service adsprpcd /vendor/bin/adsprpcd audiopd
-   class main
-   user media
-   group media
-
-service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
-   class core
-   user system
-   group system
-
-service cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
-
 service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    class main
    user system
@@ -225,11 +206,6 @@ service energy-awareness /system/vendor/bin/energy-awareness
     user system
     group system
     oneshot
-
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
 
 service nv_mac /vendor/bin/nv_mac
     class late_start
