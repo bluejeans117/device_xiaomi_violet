@@ -43,6 +43,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
+# Disable priv-app permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log
+
 # FM Radio/BT
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=cherokee
