@@ -143,12 +143,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.protected_contents=true
 
-# WFD
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
-
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=0 \
