@@ -305,6 +305,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# OP ScreenRecord
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-screenrecord.xml:system/product/etc/permissions/privapp-permissions-screenrecord.xml
+
+PRODUCT_PACKAGES += \
+    ScreenRecord
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.violet
