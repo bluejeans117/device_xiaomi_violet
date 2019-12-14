@@ -52,5 +52,5 @@ It allows additional grants on top of privapp-permissions-platform.xml
       <permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
       <permission name="android.permission.CAMERA"/>
       <permission name="android.permission.FOREGROUND_SERVICE"/>
-    </privapp-permissions>
+  </privapp-permissions>
 </permissions>
