@@ -305,6 +305,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Native Video Calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_over=1
+
 # OP ScreenRecord
 
 PRODUCT_COPY_FILES += \
