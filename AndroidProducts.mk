@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_violet.mk
+    $(LOCAL_DIR)/revengeos_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_violet-userdebug
+    revengeos_violet-userdebug

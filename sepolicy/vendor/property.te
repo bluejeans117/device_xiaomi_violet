@@ -6,3 +6,9 @@ type vendor_fp_prop, property_type;
 
 # Mlipay
 type ifaa_prop, property_type;
+
+# Camera
+type camera_prop, property_type;
+
+# mm-pp-daemon
+type mm-pp-daemon, property_type;
