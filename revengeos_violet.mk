@@ -18,6 +18,7 @@ IS_PHONE := true
 $(call inherit-product, vendor/revengeos/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := revengeos_violet
