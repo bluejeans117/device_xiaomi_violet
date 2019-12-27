@@ -377,9 +377,10 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
-# Preopt SystemUI
+# Preopt 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    Launcher3Quickstep
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
