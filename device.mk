@@ -159,6 +159,13 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Crimson
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson.xml
+
+PRODUCT_PACKAGES += \
+    Crimson
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -227,6 +234,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+
+# Google Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
+
+PRODUCT_PACKAGES += \
+    GoogleCamera
 
 # Health
 PRODUCT_PACKAGES += \
@@ -440,7 +454,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-#Hotspot
+# Hotspot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
