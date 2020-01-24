@@ -214,5 +214,8 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/violet/BoardConfigVendor.mk
