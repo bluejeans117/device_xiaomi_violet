@@ -9,5 +9,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     aosp_violet-userdebug \
-    aosp_violet-user \
-    aosp-violet-eng
+    aosp_violet-user
