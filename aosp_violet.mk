@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common EvolutionX stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := OFFICIAL
