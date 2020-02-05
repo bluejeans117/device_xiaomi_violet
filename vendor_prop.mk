@@ -119,7 +119,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     ril.subscription.types=NV,RUIM \
     ro.telephony.default_network=22,22 \
-    telephony.lteOnCdmaDevice=1
+    telephony.lteOnCdmaDevice=1 \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.sys.cust.lte_config=true \
+    persist.radio.VT_ENABLE=1 \
+    persist.radio.volte.dan_support=true
+
+# RCS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rcs.supported=1
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
