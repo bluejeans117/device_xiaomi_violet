@@ -8,10 +8,10 @@
 $(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
 
 # GoogleCamera
-$(call inherit-product-if-exists, packages/apps/GoogleCamera/gcam.mk)
+$(call inherit-product, $(LOCAL_PATH)/GoogleCamera/gcam.mk)
 
 # Firmware
-$(call inherit-product, vendor/xiaomi/violet/firmware/firmware.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/violet/firmware/firmware.mk)
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -238,13 +238,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
-
-# Google Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
-
-PRODUCT_PACKAGES += \
-    GoogleCamera
 
 # Hotspot
 PRODUCT_COPY_FILES += \
